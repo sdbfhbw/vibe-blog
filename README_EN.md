@@ -1,7 +1,5 @@
 <div align="center">
 
-<img width="256" src="./logo/vibe-blog.png">
-
 # vibe-blog
 
 _Turn complex tech into stories everyone can understand._
