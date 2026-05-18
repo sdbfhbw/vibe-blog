@@ -1,10 +1,10 @@
 <div align="center">
 
-# vibe-blog
+# 博客生成平台
 
 _Turn complex tech into stories everyone can understand._
 
-**中文 | [English](README_EN.md)**
+
 
 [![Version](https://img.shields.io/badge/version-v0.1.0-4CAF50.svg)](https://github.com/sdbfhbw/vibe-blog)
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
