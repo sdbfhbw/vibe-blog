@@ -1,0 +1,371 @@
+{
+  "summary": {
+    "queries": 15,
+    "documents": 15,
+    "chunks": 197,
+    "document_hit@5": 0.8667,
+    "chunk_hit@5": 0.6667,
+    "mrr": 0.5333,
+    "by_category": {
+      "code": {
+        "queries": 3,
+        "document_hit@5": 0.6667,
+        "chunk_hit@5": 0.6667,
+        "mrr": 0.4167
+      },
+      "document_recall": {
+        "queries": 3,
+        "document_hit@5": 1.0,
+        "chunk_hit@5": 1.0,
+        "mrr": 0.8333
+      },
+      "evaluation": {
+        "queries": 1,
+        "document_hit@5": 1.0,
+        "chunk_hit@5": 0.0,
+        "mrr": 0.0
+      },
+      "image_text": {
+        "queries": 2,
+        "document_hit@5": 1.0,
+        "chunk_hit@5": 1.0,
+        "mrr": 1.0
+      },
+      "parent_child": {
+        "queries": 2,
+        "document_hit@5": 1.0,
+        "chunk_hit@5": 0.5,
+        "mrr": 0.5
+      },
+      "storage": {
+        "queries": 2,
+        "document_hit@5": 1.0,
+        "chunk_hit@5": 0.5,
+        "mrr": 0.5
+      },
+      "table": {
+        "queries": 2,
+        "document_hit@5": 0.5,
+        "chunk_hit@5": 0.5,
+        "mrr": 0.125
+      }
+    }
+  },
+  "results": [
+    {
+      "id": "smoke_001",
+      "category": "document_recall",
+      "document_hit": true,
+      "chunk_hit": true,
+      "first_relevant_rank": 2,
+      "top_documents": [
+        "doc_chroma_vector_store",
+        "doc_hnsw_indexing",
+        "doc_bm25_sparse_retrieval",
+        "doc_embedding_retrieval",
+        "doc_cross_encoder_rerank"
+      ],
+      "top_chunks": [
+        "chunk_doc_bm25_sparse_retrieval_9",
+        "chunk_doc_rag_retrieval_pipeline_7",
+        "chunk_doc_cross_encoder_rerank_7",
+        "chunk_doc_embedding_retrieval_9",
+        "chunk_doc_chroma_vector_store_3"
+      ]
+    },
+    {
+      "id": "smoke_002",
+      "category": "document_recall",
+      "document_hit": true,
+      "chunk_hit": true,
+      "first_relevant_rank": 1,
+      "top_documents": [
+        "doc_hnsw_indexing",
+        "doc_python_ast_chunking",
+        "doc_sse_flask_streaming",
+        "doc_sqlite_chunk_storage",
+        "doc_chroma_vector_store"
+      ],
+      "top_chunks": [
+        "chunk_doc_hnsw_indexing_9",
+        "chunk_doc_hnsw_indexing_7",
+        "chunk_doc_chroma_vector_store_9",
+        "chunk_doc_hnsw_indexing_3",
+        "chunk_doc_bm25_sparse_retrieval_5"
+      ]
+    },
+    {
+      "id": "smoke_003",
+      "category": "document_recall",
+      "document_hit": true,
+      "chunk_hit": true,
+      "first_relevant_rank": 1,
+      "top_documents": [
+        "doc_rag_retrieval_pipeline",
+        "doc_bm25_sparse_retrieval",
+        "doc_embedding_retrieval",
+        "doc_cross_encoder_rerank",
+        "doc_pdf_markdown_parser"
+      ],
+      "top_chunks": [
+        "chunk_doc_cross_encoder_rerank_7",
+        "chunk_doc_rag_retrieval_pipeline_7",
+        "chunk_doc_rag_retrieval_pipeline_9",
+        "chunk_doc_bm25_sparse_retrieval_5",
+        "chunk_doc_bm25_sparse_retrieval_9"
+      ]
+    },
+    {
+      "id": "smoke_004",
+      "category": "code",
+      "document_hit": false,
+      "chunk_hit": false,
+      "first_relevant_rank": null,
+      "top_documents": [
+        "doc_python_ast_chunking",
+        "doc_pdf_markdown_parser",
+        "doc_chroma_vector_store",
+        "doc_rag_evaluation_metrics",
+        "doc_hnsw_indexing"
+      ],
+      "top_chunks": [
+        "chunk_doc_rag_retrieval_pipeline_9",
+        "chunk_doc_multimodal_retrieval_7",
+        "chunk_doc_python_ast_chunking_7",
+        "chunk_doc_multimodal_retrieval_21",
+        "chunk_doc_python_ast_chunking_3"
+      ]
+    },
+    {
+      "id": "smoke_005",
+      "category": "code",
+      "document_hit": true,
+      "chunk_hit": true,
+      "first_relevant_rank": 1,
+      "top_documents": [
+        "doc_python_ast_chunking",
+        "doc_sse_flask_streaming",
+        "doc_chroma_vector_store",
+        "doc_rag_evaluation_metrics",
+        "doc_hnsw_indexing"
+      ],
+      "top_chunks": [
+        "chunk_doc_sse_flask_streaming_15",
+        "chunk_doc_sse_flask_streaming_5",
+        "chunk_doc_sse_flask_streaming_7",
+        "chunk_doc_python_ast_chunking_7",
+        "chunk_doc_python_ast_chunking_3"
+      ]
+    },
+    {
+      "id": "smoke_006",
+      "category": "code",
+      "document_hit": true,
+      "chunk_hit": true,
+      "first_relevant_rank": 4,
+      "top_documents": [
+        "doc_python_ast_chunking",
+        "doc_markdown_chunking_strategy",
+        "doc_cross_encoder_rerank",
+        "doc_pdf_markdown_parser",
+        "doc_langgraph_blog_agent"
+      ],
+      "top_chunks": [
+        "chunk_doc_python_ast_chunking_3",
+        "chunk_doc_python_ast_chunking_9",
+        "chunk_doc_python_ast_chunking_7",
+        "chunk_doc_python_ast_chunking_5",
+        "chunk_doc_python_ast_chunking_11"
+      ]
+    },
+    {
+      "id": "smoke_007",
+      "category": "table",
+      "document_hit": false,
+      "chunk_hit": false,
+      "first_relevant_rank": null,
+      "top_documents": [
+        "doc_sqlite_chunk_storage",
+        "doc_table_chunking_qa",
+        "doc_multimodal_retrieval",
+        "doc_pdf_markdown_parser",
+        "doc_markdown_chunking_strategy"
+      ],
+      "top_chunks": [
+        "chunk_doc_table_chunking_qa_9",
+        "chunk_doc_cross_encoder_rerank_12",
+        "chunk_doc_sqlite_chunk_storage_11",
+        "chunk_doc_sqlite_chunk_storage_5",
+        "chunk_doc_table_chunking_qa_7"
+      ]
+    },
+    {
+      "id": "smoke_008",
+      "category": "table",
+      "document_hit": true,
+      "chunk_hit": true,
+      "first_relevant_rank": 4,
+      "top_documents": [
+        "doc_multimodal_retrieval",
+        "doc_python_ast_chunking",
+        "doc_sqlite_chunk_storage",
+        "doc_pdf_markdown_parser",
+        "doc_cross_encoder_rerank"
+      ],
+      "top_chunks": [
+        "chunk_doc_pdf_markdown_parser_5",
+        "chunk_doc_multimodal_retrieval_5",
+        "chunk_doc_multimodal_retrieval_15",
+        "chunk_doc_pdf_markdown_parser_9",
+        "chunk_doc_python_ast_chunking_21"
+      ]
+    },
+    {
+      "id": "smoke_009",
+      "category": "parent_child",
+      "document_hit": true,
+      "chunk_hit": false,
+      "first_relevant_rank": null,
+      "top_documents": [
+        "doc_markdown_chunking_strategy",
+        "doc_pdf_markdown_parser",
+        "doc_bm25_sparse_retrieval",
+        "doc_chroma_vector_store",
+        "doc_rag_evaluation_metrics"
+      ],
+      "top_chunks": [
+        "chunk_doc_markdown_chunking_strategy_20",
+        "chunk_doc_cross_encoder_rerank_7",
+        "chunk_doc_markdown_chunking_strategy_17",
+        "chunk_doc_markdown_chunking_strategy_5",
+        "chunk_doc_rag_retrieval_pipeline_11"
+      ]
+    },
+    {
+      "id": "smoke_010",
+      "category": "parent_child",
+      "document_hit": true,
+      "chunk_hit": true,
+      "first_relevant_rank": 1,
+      "top_documents": [
+        "doc_table_chunking_qa",
+        "doc_pdf_markdown_parser",
+        "doc_chroma_vector_store",
+        "doc_rag_evaluation_metrics",
+        "doc_hnsw_indexing"
+      ],
+      "top_chunks": [
+        "chunk_doc_table_chunking_qa_3",
+        "chunk_doc_table_chunking_qa_11",
+        "chunk_doc_table_chunking_qa_5",
+        "chunk_doc_table_chunking_qa_7",
+        "chunk_doc_table_chunking_qa_9"
+      ]
+    },
+    {
+      "id": "smoke_011",
+      "category": "image_text",
+      "document_hit": true,
+      "chunk_hit": true,
+      "first_relevant_rank": 1,
+      "top_documents": [
+        "doc_rag_retrieval_pipeline",
+        "doc_pdf_markdown_parser",
+        "doc_sse_flask_streaming",
+        "doc_sqlite_chunk_storage",
+        "doc_table_chunking_qa"
+      ],
+      "top_chunks": [
+        "chunk_doc_rag_retrieval_pipeline_23",
+        "chunk_doc_rag_retrieval_pipeline_20",
+        "chunk_doc_rag_retrieval_pipeline_11",
+        "chunk_doc_pdf_markdown_parser_21",
+        "chunk_doc_rag_retrieval_pipeline_14"
+      ]
+    },
+    {
+      "id": "smoke_012",
+      "category": "image_text",
+      "document_hit": true,
+      "chunk_hit": true,
+      "first_relevant_rank": 1,
+      "top_documents": [
+        "doc_pdf_markdown_parser",
+        "doc_rag_retrieval_pipeline",
+        "doc_cross_encoder_rerank",
+        "doc_python_ast_chunking",
+        "doc_sqlite_chunk_storage"
+      ],
+      "top_chunks": [
+        "chunk_doc_pdf_markdown_parser_18",
+        "chunk_doc_pdf_markdown_parser_21",
+        "chunk_doc_pdf_markdown_parser_11",
+        "chunk_doc_pdf_markdown_parser_14",
+        "chunk_doc_pdf_markdown_parser_3"
+      ]
+    },
+    {
+      "id": "smoke_013",
+      "category": "storage",
+      "document_hit": true,
+      "chunk_hit": true,
+      "first_relevant_rank": 1,
+      "top_documents": [
+        "doc_sqlite_chunk_storage",
+        "doc_cross_encoder_rerank",
+        "doc_pdf_markdown_parser",
+        "doc_python_ast_chunking",
+        "doc_bm25_sparse_retrieval"
+      ],
+      "top_chunks": [
+        "chunk_doc_sqlite_chunk_storage_3",
+        "chunk_doc_rag_retrieval_pipeline_7",
+        "chunk_doc_sqlite_chunk_storage_5",
+        "chunk_doc_sqlite_chunk_storage_9",
+        "chunk_doc_bm25_sparse_retrieval_9"
+      ]
+    },
+    {
+      "id": "smoke_014",
+      "category": "storage",
+      "document_hit": true,
+      "chunk_hit": false,
+      "first_relevant_rank": null,
+      "top_documents": [
+        "doc_cross_encoder_rerank",
+        "doc_rag_evaluation_metrics",
+        "doc_rag_retrieval_pipeline",
+        "doc_chroma_vector_store",
+        "doc_hnsw_indexing"
+      ],
+      "top_chunks": [
+        "chunk_doc_cross_encoder_rerank_7",
+        "chunk_doc_bm25_sparse_retrieval_9",
+        "chunk_doc_cross_encoder_rerank_3",
+        "chunk_doc_cross_encoder_rerank_1",
+        "chunk_doc_sqlite_chunk_storage_5"
+      ]
+    },
+    {
+      "id": "smoke_015",
+      "category": "evaluation",
+      "document_hit": true,
+      "chunk_hit": false,
+      "first_relevant_rank": null,
+      "top_documents": [
+        "doc_rag_evaluation_metrics",
+        "doc_python_ast_chunking",
+        "doc_sqlite_chunk_storage",
+        "doc_markdown_chunking_strategy",
+        "doc_chroma_vector_store"
+      ],
+      "top_chunks": [
+        "chunk_doc_bm25_sparse_retrieval_9",
+        "chunk_doc_rag_evaluation_metrics_5",
+        "chunk_doc_rag_evaluation_metrics_24",
+        "chunk_doc_cross_encoder_rerank_7",
+        "chunk_doc_rag_retrieval_pipeline_7"
+      ]
+    }
+  ]
+}

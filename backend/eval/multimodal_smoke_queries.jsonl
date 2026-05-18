@@ -1,0 +1,5 @@
+{"id":"mm_001","query":"哪张图展示了 Document Recall 到 Citations 的流程？","expected_document_ids":["doc_rag_retrieval_pipeline"],"expected_image_file":"rag_pipeline.png"}
+{"id":"mm_002","query":"哪张图展示了 retrieve、rerank、generate 和 citations 节点？","expected_document_ids":["doc_langgraph_blog_agent"],"expected_image_file":"langgraph_workflow.png"}
+{"id":"mm_003","query":"哪张图里有 SQLITE_BUSY 和 database is locked？","expected_document_ids":["doc_sqlite_chunk_storage"],"expected_image_file":"sqlite_schema_error.png"}
+{"id":"mm_004","query":"哪张图展示了 PDF 转 Markdown，再提取 text code table image？","expected_document_ids":["doc_pdf_markdown_parser"],"expected_image_file":"pdf_parse_flow.png"}
+{"id":"mm_005","query":"哪张图展示了 Caption OCR 和 Image Embedding 的融合？","expected_document_ids":["doc_multimodal_retrieval"],"expected_image_file":"multimodal_retrieval_arch.png"}

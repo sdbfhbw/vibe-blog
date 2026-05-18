@@ -1,0 +1,11 @@
+{
+  "buildCommand": "pip install -r backend/requirements.txt",
+  "framework": "flask",
+  "regions": ["sfo1"],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index.py"
+    }
+  ]
+}

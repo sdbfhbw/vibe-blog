@@ -1,0 +1,15 @@
+{"id":"smoke_001","category":"document_recall","query":"为什么不能只依赖向量检索，还要保留 BM25？","expected_document_ids":["doc_rag_retrieval_pipeline","doc_bm25_sparse_retrieval"],"expected_terms":["BM25","精确匹配"]}
+{"id":"smoke_002","category":"document_recall","query":"HNSW 的 ef_search 是建库参数还是查询参数？","expected_document_ids":["doc_hnsw_indexing"],"expected_terms":["ef_search","查询"]}
+{"id":"smoke_003","category":"document_recall","query":"Cross-Encoder 为什么适合做 rerank 而不是全库召回？","expected_document_ids":["doc_cross_encoder_rerank"],"expected_terms":["Cross-Encoder","全库召回"]}
+{"id":"smoke_004","category":"code","query":"哪个函数负责 RRF 融合？","expected_document_ids":["doc_rag_retrieval_pipeline"],"expected_terms":["def rrf_fuse"]}
+{"id":"smoke_005","category":"code","query":"哪个函数负责持续 yield SSE token？","expected_document_ids":["doc_sse_flask_streaming"],"expected_terms":["stream_blog_generation","yield"]}
+{"id":"smoke_006","category":"code","query":"Python AST 切分里哪个类负责函数和类边界？","expected_document_ids":["doc_python_ast_chunking"],"expected_terms":["AST","FunctionDef"]}
+{"id":"smoke_007","category":"table","query":"哪个表格说明了 chunk recall 阶段的 main metric？","expected_document_ids":["doc_rag_retrieval_pipeline"],"expected_terms":["chunk_recall","Chunk Recall@K"]}
+{"id":"smoke_008","category":"table","query":"哪类 chunk 必须包含 image_id、caption 和 OCR 文本？","expected_document_ids":["doc_pdf_markdown_parser"],"expected_terms":["image_id","ocr_text"]}
+{"id":"smoke_009","category":"parent_child","query":"为什么 Markdown 标题层级对 parent-child 扩展重要？","expected_document_ids":["doc_markdown_chunking_strategy"],"expected_terms":["标题层级","父子关系"]}
+{"id":"smoke_010","category":"parent_child","query":"为什么表格问答必须保留表头？","expected_document_ids":["doc_table_chunking_qa"],"expected_terms":["表头","列语义"]}
+{"id":"smoke_011","category":"image_text","query":"哪张图展示了 Document Recall 到 Citations 的流程？","expected_document_ids":["doc_rag_retrieval_pipeline"],"expected_terms":["Document Recall","Citations"]}
+{"id":"smoke_012","category":"image_text","query":"PDF 解析流程图里有哪些资产类型？","expected_document_ids":["doc_pdf_markdown_parser"],"expected_terms":["text code table image","OCR"]}
+{"id":"smoke_013","category":"storage","query":"SQLite 中为什么需要同时保存 document_id 和 chunk_id？","expected_document_ids":["doc_sqlite_chunk_storage"],"expected_terms":["document_id","chunk_id"]}
+{"id":"smoke_014","category":"storage","query":"Chroma 在本地 RAG 原型里负责什么？","expected_document_ids":["doc_chroma_vector_store"],"expected_terms":["向量","检索"]}
+{"id":"smoke_015","category":"evaluation","query":"Hit@K 和 MRR 的区别是什么？","expected_document_ids":["doc_rag_evaluation_metrics"],"expected_terms":["Hit@K","MRR"]}

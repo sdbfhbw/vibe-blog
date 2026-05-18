@@ -1,0 +1,46 @@
+{
+  "summary": {
+    "queries": 5,
+    "image_vector_hit@3": 0.0,
+    "image_rerank_hit@3": 0.0,
+    "multimodal_available": false,
+    "rerank_available": true
+  },
+  "results": [
+    {
+      "id": "mm_001",
+      "vector_hit": false,
+      "rerank_hit": false,
+      "vector_top_images": [],
+      "rerank_top_images": []
+    },
+    {
+      "id": "mm_002",
+      "vector_hit": false,
+      "rerank_hit": false,
+      "vector_top_images": [],
+      "rerank_top_images": []
+    },
+    {
+      "id": "mm_003",
+      "vector_hit": false,
+      "rerank_hit": false,
+      "vector_top_images": [],
+      "rerank_top_images": []
+    },
+    {
+      "id": "mm_004",
+      "vector_hit": false,
+      "rerank_hit": false,
+      "vector_top_images": [],
+      "rerank_top_images": []
+    },
+    {
+      "id": "mm_005",
+      "vector_hit": false,
+      "rerank_hit": false,
+      "vector_top_images": [],
+      "rerank_top_images": []
+    }
+  ]
+}

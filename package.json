@@ -1,0 +1,11 @@
+{
+  "name": "vibe-blog",
+  "private": true,
+  "scripts": {
+    "install:frontend": "npm --prefix frontend install",
+    "install:gateway": "npm --prefix whatsapp-gateway install",
+    "test:frontend": "npm --prefix frontend test -- --run",
+    "build:frontend": "npm --prefix frontend run build",
+    "dev:frontend": "npm --prefix frontend run dev"
+  }
+}

@@ -1,0 +1,67 @@
+services:
+  # Flask 后端 - vibe-blog
+  backend:
+    build:
+      context: ../backend
+      dockerfile: Dockerfile
+      args:
+        ENABLE_PUBLISHER: "false"  # 改成 "true" 启用发布功能（增加 167 MB）
+    container_name: vibe-blog-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../backend/outputs:/app/outputs
+      - ../backend/logs:/app/logs
+      - ../backend/uploads:/app/uploads
+      - ../backend/data:/app/data
+    env_file:
+      - ../backend/.env
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+      - LOG_DIR=/app/logs
+      - OUTPUT_FOLDER=/app/outputs
+      - UPLOAD_FOLDER=/app/uploads
+      # 飞书机器人（对话式写作入口）
+      - FEISHU_APP_ID=${FEISHU_APP_ID:-}
+      - FEISHU_APP_SECRET=${FEISHU_APP_SECRET:-}
+      - FEISHU_VERIFICATION_TOKEN=${FEISHU_VERIFICATION_TOKEN:-}
+      - FEISHU_ENCRYPT_KEY=${FEISHU_ENCRYPT_KEY:-}
+    logging:
+      driver: "local"
+      options:
+        max-size: "50m"
+        max-file: "3"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Vue 前端 - vibe-blog
+  frontend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.frontend
+    container_name: vibe-blog-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # Nginx 反向代理 (生产环境)
+  nginx:
+    image: nginx:alpine
+    container_name: vibe-blog-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ../ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - backend
+      - frontend
+    restart: unless-stopped
